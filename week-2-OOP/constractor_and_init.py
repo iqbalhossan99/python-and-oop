@@ -1,5 +1,5 @@
 class Phone:
-    # this is class variable that get access of all instance of this class. And can modify
+    # this is class variable/attribute that get access And can modify of all instance of this class. 
     manufactured = "China"
 
     # constructor
