@@ -26,7 +26,8 @@ class Customer(User):
     
     def place_order(self, order):
         self.order = order
-        print(f'{self.name} place an order {order.item}')
+        self.due_amount += order.bill
+        print(f'{self.name} place an order with bill {order.bill}')
     
     def eat_food(self, order):
         print(f'{self.name} item food {order.items}')
